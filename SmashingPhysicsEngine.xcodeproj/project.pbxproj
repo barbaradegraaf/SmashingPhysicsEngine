@@ -23,8 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7549BB8B20CCB14200100D5A /* SmashingPhysicsEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SmashingPhysicsEngine; sourceTree = BUILT_PRODUCTS_DIR; };
+		7549BB8B20CCB14200100D5A /* SmashingPhysicsEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = SmashingPhysicsEngine; path = /Users/barbaradegraaf/Documents/SmashingPhysicsEngine/build/Debug/SmashingPhysicsEngine; sourceTree = "<absolute>"; };
 		7549BB8E20CCB14200100D5A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7549BB9520CCB4BE00100D5A /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,25 +43,18 @@
 			isa = PBXGroup;
 			children = (
 				7549BB8D20CCB14200100D5A /* SmashingPhysicsEngine */,
-				7549BB8C20CCB14200100D5A /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		7549BB8C20CCB14200100D5A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7549BB8B20CCB14200100D5A /* SmashingPhysicsEngine */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		7549BB8D20CCB14200100D5A /* SmashingPhysicsEngine */ = {
 			isa = PBXGroup;
 			children = (
 				7549BB8E20CCB14200100D5A /* main.cpp */,
+				7549BB9520CCB4BE00100D5A /* .gitattributes */,
 			);
 			path = SmashingPhysicsEngine;
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 /* End PBXGroup section */
 
@@ -104,7 +98,7 @@
 				en,
 			);
 			mainGroup = 7549BB8220CCB14200100D5A;
-			productRefGroup = 7549BB8C20CCB14200100D5A /* Products */;
+			productRefGroup = 7549BB8220CCB14200100D5A;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
