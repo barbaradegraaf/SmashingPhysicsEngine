@@ -3,6 +3,7 @@
 //  SmashingPhysicsEngine
 //
 //
+#include <math.h>
 
 #ifndef Vector_h
 #define Vector_h
@@ -25,6 +26,9 @@ namespace smashing {
 		Vector3& operator= (const Vector3& vector) //copy assignment
 		~Vector3(); //dtor
 		void invert();
+		real magnitude() const;
+		real squaredMagnitude() const;
+		void normalize();
 	};
 	
 	Vector3::Vector3() : x(0), y(0), z(0) {
@@ -49,10 +53,23 @@ namespace smashing {
 	Vector3::~Vector3(){
 		
 	}
-	void Vector::invert(){
+	void Vector3::invert(){
 		x = -x;
 		y = -y;
 		z = -z;
+	}
+	real Vector3::magnitude() const{
+		return real_sqrt(x*x + y*y + z*z);
+	}
+	real Vector3::squaredMagnitude() const{
+		return (x*x + y*y + z*z);
+	}
+	void Vector3::normalize(){
+		real len = magnitude();
+		if (len > 0)
+		{
+			(*this) *= ((real)1)/len;
+		}
 	}
 }
 	

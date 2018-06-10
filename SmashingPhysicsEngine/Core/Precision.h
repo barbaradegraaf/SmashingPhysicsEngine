@@ -11,8 +11,10 @@
 nampespace smashing {
 #if defined(IS_DOUBLE_PRECISION_ENABLED)   // If we are compiling for double precision
 	typedef double real;
+	#define real_sqrt sqrt
 #else                                      // If we are compiling for single precision
 	typedef float real;
+	#define real_sqrt sqrtf
 #endif
 }
 
