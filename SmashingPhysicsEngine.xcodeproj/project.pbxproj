@@ -19,7 +19,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7549BB8B20CCB14200100D5A /* SmashingPhysicsEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = SmashingPhysicsEngine; path = /Users/barbaradegraaf/Documents/SmashingPhysicsEngine/build/Debug/SmashingPhysicsEngine; sourceTree = "<absolute>"; };
+		7513950820D855E60078227B /* SmashingPhysicsEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = SmashingPhysicsEngine; path = /Users/barbaradegraaf/Documents/SmashingPhysicsEngine/build/Debug/SmashingPhysicsEngine; sourceTree = "<absolute>"; };
 		7549BB9520CCB4BE00100D5A /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		7549BB9720CCB70600100D5A /* Vector3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vector3.h; sourceTree = "<group>"; };
 		7549BB9820CCB74300100D5A /* Precision.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Precision.h; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 			);
 			name = SmashingPhysicsEngine;
 			productName = SmashingPhysicsEngine;
-			productReference = 7549BB8B20CCB14200100D5A /* SmashingPhysicsEngine */;
+			productReference = 7513950820D855E60078227B /* SmashingPhysicsEngine */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
