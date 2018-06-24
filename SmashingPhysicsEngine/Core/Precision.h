@@ -8,7 +8,8 @@
 #ifndef Precision_h
 #define Precision_h
 
-nampespace smashing {
+namespace smashing {
+	
 #if defined(IS_DOUBLE_PRECISION_ENABLED)   // If we are compiling for double precision
 	typedef double real;
 	#define real_sqrt sqrt
@@ -17,6 +18,5 @@ nampespace smashing {
 	#define real_sqrt sqrtf
 #endif
 }
-
 
 #endif /* Precision_h */
