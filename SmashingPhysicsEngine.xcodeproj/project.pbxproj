@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7513951120E01E2D0078227B /* test_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7513950F20E019090078227B /* test_main.cpp */; };
 		7513951220E01E630078227B /* test_Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7513951020E019660078227B /* test_Vector3.cpp */; };
+		7513951420E036D90078227B /* PointMass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7513951320E036D90078227B /* PointMass.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		7513950E20E018710078227B /* catch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = "<group>"; };
 		7513950F20E019090078227B /* test_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_main.cpp; sourceTree = "<group>"; };
 		7513951020E019660078227B /* test_Vector3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_Vector3.cpp; sourceTree = "<group>"; };
+		7513951320E036D90078227B /* PointMass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PointMass.cpp; sourceTree = "<group>"; };
 		7549BB9520CCB4BE00100D5A /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		7549BB9720CCB70600100D5A /* Vector3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vector3.h; sourceTree = "<group>"; };
 		7549BB9820CCB74300100D5A /* Precision.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Precision.h; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				7513950920D875410078227B /* PointMass.h */,
+				7513951320E036D90078227B /* PointMass.cpp */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				7513951220E01E630078227B /* test_Vector3.cpp in Sources */,
 				7513951120E01E2D0078227B /* test_main.cpp in Sources */,
+				7513951420E036D90078227B /* PointMass.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

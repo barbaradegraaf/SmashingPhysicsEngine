@@ -3,7 +3,6 @@
 #include "catch.hpp"
 #include "../Core/Vector3.h"
 
-namespace unitTest {
 	TEST_CASE( "Vector3 ctors set values", "[Vector3]" ) {
 		SECTION( "Default ctor should set them to zero" ) {
 			smashing::Vector3 v;
@@ -242,5 +241,4 @@ namespace unitTest {
 			REQUIRE( v1.z == -3);
 		}
 	}
-}
 
