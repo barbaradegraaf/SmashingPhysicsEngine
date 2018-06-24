@@ -8,7 +8,7 @@
 #ifndef Vector_h
 #define Vector_h
 
-#include "precision.h"
+#include "Precision.h"
 
 namespace smashing {
 	
@@ -22,8 +22,8 @@ namespace smashing {
 		// Methods
 		Vector3();
 		Vector3(real x, real y, real z);
-		Vector3(const Vector3& vector) //copy ctor
-		Vector3& operator= (const Vector3& vector) //copy assignment
+		Vector3(const Vector3& vector);//copy ctor
+		Vector3& operator= (const Vector3& vector); //copy assignment
 		~Vector3(); //dtor
 		
 		void invert();
@@ -39,7 +39,7 @@ namespace smashing {
 		void operator*=(const real value);
 		Vector3 operator*(const real value) const;
 		real operator*(const Vector3 &vector) const;
-		void operator%=(const Vector3 &vector)
+		void operator%=(const Vector3 &vector);
 		Vector3 operator%(const Vector3 &vector) const;
 		void operator/=(const real value);
 		Vector3 operator/(const real value) const;
@@ -111,11 +111,11 @@ namespace smashing {
 		z *= vector.z;
 	}
 	// This does the dot product with the this value and returns the scalar value
-	real Vector3::dotProduct(const Vector3 &vector){
+	real Vector3::dotProduct(const Vector3 &vector)const{
 		return x*vector.x + y*vector.y + z*vector.z;
 	}
 	// This does the cross product between this and the passed in vector returning a vector
-	Vector3 Vector3::crossProduct(const Vector3 &vector){
+	Vector3 Vector3::crossProduct(const Vector3 &vector)const{
 		return Vector3(y*vector.z - z*vector.y,
 					   z*vector.x - x*vector.z,
 					   x*vector.y - y*vector.x);
@@ -139,7 +139,7 @@ namespace smashing {
 	}
 	// Update the current vector to be the cross product between the passed in one and current one
 	void Vector3::operator%=(const Vector3 &vector){
-		*this = vectorProduct(vector);
+		*this = crossProduct(vector);
 	}
 	// Does the cross product between pass in and current vector
 	Vector3 Vector3::operator%(const Vector3 &vector) const{
@@ -169,7 +169,7 @@ namespace smashing {
 	}
 	// Returns the value of the given vector added to this.
 	Vector3 Vector3::operator+(const Vector3& vector) const{
-		return Vector3(x+vector.x, y+vector.y, z+vector.z)
+		return Vector3(x+vector.x, y+vector.y, z+vector.z);
 	}
 	
 	// -
@@ -181,7 +181,7 @@ namespace smashing {
 	}
 	// Returns the value of the given vector subtracted from this.
 	Vector3 Vector3::operator-(const Vector3& vector) const{
-		return Vector3(x-vector.x, y-vector.y, z-vector.z)
+		return Vector3(x-vector.x, y-vector.y, z-vector.z);
 	}
 }
 

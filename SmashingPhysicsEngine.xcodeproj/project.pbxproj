@@ -6,6 +6,11 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7513951120E01E2D0078227B /* test_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7513950F20E019090078227B /* test_main.cpp */; };
+		7513951220E01E630078227B /* test_Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7513951020E019660078227B /* test_Vector3.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		7549BB8920CCB14200100D5A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -21,6 +26,9 @@
 /* Begin PBXFileReference section */
 		7513950820D855E60078227B /* SmashingPhysicsEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = SmashingPhysicsEngine; path = /Users/barbaradegraaf/Documents/SmashingPhysicsEngine/build/Debug/SmashingPhysicsEngine; sourceTree = "<absolute>"; };
 		7513950920D875410078227B /* PointMass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointMass.h; sourceTree = "<group>"; };
+		7513950E20E018710078227B /* catch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = "<group>"; };
+		7513950F20E019090078227B /* test_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_main.cpp; sourceTree = "<group>"; };
+		7513951020E019660078227B /* test_Vector3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_Vector3.cpp; sourceTree = "<group>"; };
 		7549BB9520CCB4BE00100D5A /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		7549BB9720CCB70600100D5A /* Vector3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vector3.h; sourceTree = "<group>"; };
 		7549BB9820CCB74300100D5A /* Precision.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Precision.h; sourceTree = "<group>"; };
@@ -45,6 +53,16 @@
 			path = Engine;
 			sourceTree = "<group>";
 		};
+		7513950C20E018310078227B /* UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				7513950E20E018710078227B /* catch.hpp */,
+				7513950F20E019090078227B /* test_main.cpp */,
+				7513951020E019660078227B /* test_Vector3.cpp */,
+			);
+			path = UnitTest;
+			sourceTree = "<group>";
+		};
 		7549BB8220CCB14200100D5A = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +73,7 @@
 		7549BB8D20CCB14200100D5A /* SmashingPhysicsEngine */ = {
 			isa = PBXGroup;
 			children = (
+				7513950C20E018310078227B /* UnitTest */,
 				7513950B20E011AA0078227B /* Engine */,
 				7549BB9620CCB6E000100D5A /* Core */,
 				7549BB9520CCB4BE00100D5A /* .gitattributes */,
@@ -128,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7513951220E01E630078227B /* test_Vector3.cpp in Sources */,
+				7513951120E01E2D0078227B /* test_main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
